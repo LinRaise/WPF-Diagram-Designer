@@ -1,0 +1,58 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:DiagramDesigner">
+    <s:Toolbox 
+        x:Key="RegelungstechnikSymbole" 
+        DefaultItemSize="55,45">
+        <ItemsControl.Items>
+            <Grid
+                IsHitTestVisible="False"
+                Margin="2"
+                ToolTip="Verzögerung" 
+                MinHeight="30" MinWidth="40">
+                <Image  Stretch="Fill" Source="../Images/rt1.png"/>
+                <Rectangle Stroke="Black" StrokeThickness="1"/>
+            </Grid>
+            <Grid
+                IsHitTestVisible="False" 
+                Margin="2"
+                ToolTip="PT2" 
+                MinHeight="30" MinWidth="40">
+                <Image  Stretch="Fill" Source="../Images/rt2.png"/>
+                <Rectangle Stroke="Black" StrokeThickness="1"/>
+            </Grid>
+            <Grid
+                IsHitTestVisible="False" 
+                Margin="2"
+                ToolTip="PI" 
+                MinHeight="30" MinWidth="40">
+                <Image  Stretch="Fill" Source="../Images/rt3.png"/>
+                <Rectangle Stroke="Black" StrokeThickness="1"/>
+            </Grid>
+            <Grid
+                IsHitTestVisible="False" 
+                Margin="2"
+                ToolTip="Kennlinie" 
+                MinHeight="30" MinWidth="40">
+                <Image  Stretch="Fill" Source="../Images/rt4.png"/>
+                <Rectangle Stroke="Black" StrokeThickness="1"/>
+            </Grid>
+            <Grid 
+                IsHitTestVisible="False" 
+                Margin="2"
+                ToolTip="Cosinus" 
+                MinHeight="30" MinWidth="40">
+                <Image  Stretch="Fill" Source="../Images/rt5.png"/>
+                <Rectangle Stroke="Black" StrokeThickness="1"/>
+            </Grid>
+            <Grid 
+                IsHitTestVisible="False"
+                Margin="2"
+                ToolTip="Zweipunkt" 
+                MinHeight="30" MinWidth="40">
+                <Image  Stretch="Fill" Source="../Images/rt6.png"/>
+                <Rectangle Stroke="Black" StrokeThickness="1"/>
+            </Grid>
+        </ItemsControl.Items>
+    </s:Toolbox>
+</ResourceDictionary>

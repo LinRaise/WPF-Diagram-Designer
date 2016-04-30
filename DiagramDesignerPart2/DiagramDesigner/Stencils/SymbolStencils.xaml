@@ -1,0 +1,46 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:DiagramDesigner">
+    <s:Toolbox x:Key="SymbolStencils"
+               DefaultItemSize="55,55">
+        <ItemsControl.Items>
+            <Image IsHitTestVisible="False"
+                   Stretch="Fill"
+                   Source="../Images/cross.png" />
+            <Image IsHitTestVisible="False"
+                   Stretch="Fill"
+                   Source="../Images/chart2.png" />
+            <Image IsHitTestVisible="False"
+                   Stretch="Fill"
+                   Source="../Images/chart1.png" />
+            <Image IsHitTestVisible="False"
+                   Stretch="Fill"
+                   Source="../Images/chart3.png" />
+            <Image IsHitTestVisible="False"
+                   Stretch="Fill"
+                   Source="../Images/attention.png" />
+            <Image IsHitTestVisible="False"
+                   Stretch="Fill"
+                   Source="../Images/ring.png" />
+            <Image IsHitTestVisible="False"
+                   Stretch="Fill"
+                   Source="../Images/world.png" />
+            <Image IsHitTestVisible="False"
+                   Stretch="Fill"
+                   Source="../Images/walk.png" />
+            <Image IsHitTestVisible="False"
+                   Stretch="Fill"
+                   Source="../Images/mail.png" />
+            <Image IsHitTestVisible="False"
+                   Stretch="Fill"
+                   Source="../Images/software.png" />
+            <Image IsHitTestVisible="False"
+                   Stretch="Fill"
+                   Source="../Images/nuclear.png" />
+            <Image IsHitTestVisible="False"
+                   Stretch="Fill"
+                   Source="../Images/plus.png" />
+
+        </ItemsControl.Items>
+    </s:Toolbox>
+</ResourceDictionary>

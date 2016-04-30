@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="SL.Sample1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <Canvas >
+        <Button Name="btn1"   Width="100" Height="20" Content="Hover over me"></Button>
+        <Button  Cursor="Eraser" Canvas.Top="20"   Width="100" Height="20" Content="Eraser"></Button>
+        <Button  Cursor="IBeam" Canvas.Top="40"  Width="100" Height="20" Content="IBeam"></Button>
+        <Button  Cursor="SizeNESW" Canvas.Top="60"   Width="100" Height="20" Content="SizeNESW"></Button>
+        <Button  Cursor="SizeNWSE" Canvas.Top="80"  Width="100" Height="20" Content="SizeNWSE"></Button>
+        <Button  Cursor="Stylus" Canvas.Top="100"   Width="100" Height="20" Content="Stylus"></Button>
+        <Button  Cursor="Wait" Canvas.Top="120"  Width="100" Height="20" Content="Wait"></Button>
+        <Button  Cursor="SizeNS" Canvas.Top="140"   Width="100" Height="20" Content="SizeNS"></Button>
+        <Button  Cursor="SizeWE" Canvas.Top="160"  Width="100" Height="20" Content="SizeWE"></Button>
+        <Button  Cursor="Arrow" Canvas.Top="180"   Width="100" Height="20" Content="Arrow"></Button>
+        <Button  Cursor="None" Canvas.Top="200"  Width="100" Height="20" Content="None"></Button>
+    </Canvas>
+</UserControl>

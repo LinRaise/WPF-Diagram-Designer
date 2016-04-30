@@ -1,0 +1,202 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="clr-namespace:DiagramDesigner">
+
+
+    <RadialGradientBrush
+        x:Key="RadialBrushGray"
+        Center="0.2, 0.2"
+        GradientOrigin="0.2, 0.2"
+        RadiusX="0.8"
+        RadiusY="0.8">
+        <GradientStop
+            Color="WhiteSmoke"
+            Offset="0" />
+        <GradientStop
+            Color="Black"
+            Offset="0.9" />
+    </RadialGradientBrush>
+
+    <RadialGradientBrush
+        x:Key="RadialBrushOrange"
+        Center="0.2, 0.2"
+        GradientOrigin="0.2, 0.2"
+        RadiusX="0.8"
+        RadiusY="0.8">
+        <GradientStop
+            Color="White"
+            Offset="0" />
+        <GradientStop
+            Color="Orange"
+            Offset="0.9" />
+    </RadialGradientBrush>
+
+    <RadialGradientBrush
+        x:Key="RadialBrushGreen"
+        Center="0.2, 0.2"
+        GradientOrigin="0.2, 0.2"
+        RadiusX="0.8"
+        RadiusY="0.8">
+        <GradientStop
+            Color="White"
+            Offset="0" />
+        <GradientStop
+            Color="Green"
+            Offset="0.9" />
+    </RadialGradientBrush>
+
+    <RadialGradientBrush
+        x:Key="RadialBrushBlue"
+        Center="0.2, 0.2"
+        GradientOrigin="0.2, 0.2"
+        RadiusX="0.8"
+        RadiusY="0.8">
+        <GradientStop
+            Color="White"
+            Offset="0" />
+        <GradientStop
+            Color="Blue"
+            Offset="0.9" />
+    </RadialGradientBrush>
+
+    <RadialGradientBrush
+        x:Key="RadialBrushRed"
+        Center="0.2, 0.2"
+        GradientOrigin="0.2, 0.2"
+        RadiusX="0.8"
+        RadiusY="0.8">
+        <GradientStop
+            Color="#33FF4545"
+            Offset="0" />
+        <GradientStop
+            Color="Crimson"
+            Offset="1" />
+    </RadialGradientBrush>
+
+    <LinearGradientBrush
+        x:Key="LinearBrushOrange"
+        StartPoint="0,0"
+        EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop
+                Offset="0"
+                Color="#FFD39E" />
+            <GradientStop
+                Offset="0.5"
+                Color="#FFBB6D" />
+            <GradientStop
+                Offset="0.5"
+                Color="#FFAF43" />
+            <GradientStop
+                Offset="1"
+                Color="#FEDD76" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush
+        x:Key="LinearBrushBlue"
+        StartPoint="0,0"
+        EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop
+                Color="#8AB1FB"
+                Offset="0" />
+            <GradientStop
+                Color="#002874"
+                Offset="1" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush
+        x:Key="LinearBrushGreen"
+        StartPoint="0,0"
+        EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop
+                Color="#46CA44"
+                Offset="0" />
+            <GradientStop
+                Color="#1B9B1A"
+                Offset=".8" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <s:Toolbox
+        x:Key="BasicShapesStencils"
+        DefaultItemSize="50,50">
+        <ItemsControl.Items>
+            <Grid>
+                <Ellipse
+                    Fill="{StaticResource RadialBrushOrange}"
+                    Margin="1"
+                    ToolTip="Ellipse"
+                    IsHitTestVisible="False" />
+                <s:DesignerItem.MoveThumbTemplate>
+                    <ControlTemplate>
+                        <Ellipse
+                            Fill="Transparent" />
+                    </ControlTemplate>
+                </s:DesignerItem.MoveThumbTemplate>
+            </Grid>
+            <Ellipse
+                Fill="{StaticResource RadialBrushBlue}"
+                ToolTip="Ellipse"
+                IsHitTestVisible="False">
+                <s:DesignerItem.MoveThumbTemplate>
+                    <ControlTemplate>
+                        <Ellipse
+                            Fill="Transparent" />
+                    </ControlTemplate>
+                </s:DesignerItem.MoveThumbTemplate>
+            </Ellipse>
+            <Ellipse
+                Fill="{StaticResource RadialBrushGray}"
+                ToolTip="Ellipse"
+                IsHitTestVisible="False">
+                <s:DesignerItem.MoveThumbTemplate>
+                    <ControlTemplate>
+                        <Ellipse
+                            Fill="Transparent" />
+                    </ControlTemplate>
+                </s:DesignerItem.MoveThumbTemplate>
+            </Ellipse>
+
+            <!--<Ellipse Fill="{StaticResource RadialBrushRed}" ToolTip="Ellipse" IsHitTestVisible="false">
+        <s:DesignerItem.DragThumbTemplate>
+          <ControlTemplate>
+            <Ellipse Fill="Transparent"/>
+          </ControlTemplate>
+        </s:DesignerItem.DragThumbTemplate>
+      </Ellipse>
+      
+      <Rectangle Fill="{StaticResource LinearBrushOrange}"
+                 RadiusX="10" RadiusY="10"
+                 ToolTip="Rectangle" IsHitTestVisible="false"/>
+
+      <Rectangle Fill="{StaticResource LinearBrushGreen}"
+                 RadiusX="10" RadiusY="10"
+                 ToolTip="Rectangle" IsHitTestVisible="false"/>
+
+      <Rectangle Fill="{StaticResource LinearBrushBlue}"
+                 RadiusX="10" RadiusY="10"
+                 ToolTip="Rectangle" IsHitTestVisible="false"/>
+
+      <Path IsHitTestVisible="false"
+            Stroke="Red"
+            StrokeThickness="4"
+            StrokeLineJoin="Round"
+            Stretch="Fill"
+            ToolTip="Star"
+            Data="M 9,2 11,7 17,7 12,10 14,15 9,12 4,15 6,10 1,7 7,7 Z">
+        <s:DesignerItem.DragThumbTemplate>
+          <ControlTemplate>
+            <Path Data="M 9,2 11,7 17,7 12,10 14,15 9,12 4,15 6,10 1,7 7,7 Z" Fill="Transparent" Stretch="Fill"/>
+          </ControlTemplate>
+        </s:DesignerItem.DragThumbTemplate>
+      </Path>-->
+
+        </ItemsControl.Items>
+    </s:Toolbox>
+
+</ResourceDictionary>

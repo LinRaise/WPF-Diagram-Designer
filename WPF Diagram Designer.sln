@@ -1,0 +1,138 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF Diagram Designer", "WPF Diagram Designer\WPF Diagram Designer.csproj", "{66B04124-3014-4E13-A3DC-0316C13A4F7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DiagramDesignerPart1", "DiagramDesignerPart1", "{14368E83-2EAC-475F-9103-72E9CB896BAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveResize", "DiagramDesignerPart1\MoveResize\MoveResize.csproj", "{95CDC6DB-FF23-4262-8447-3CFE6B4C7188}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveResizeRotate", "DiagramDesignerPart1\MoveResizeRotate\MoveResizeRotate.csproj", "{EF0B4258-89E8-423F-A38D-C1E8AF9FD5C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveResizeRotateWithAdorners", "DiagramDesignerPart1\MoveResizeRotateWithAdorners\MoveResizeRotateWithAdorners.csproj", "{7B1D1E85-7F7B-47A8-8D5D-47BA75B29A97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{358FD706-9B36-43E8-B8E5-7AD2DB74D0E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "en", "en", "{682F0FB2-38D5-4629-8881-3E2A4DAEBB62}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\en\WPF Diagram Designer - Part 2 - CodeProject.pdf = Docs\en\WPF Diagram Designer - Part 2 - CodeProject.pdf
+		Docs\en\WPF Diagram Designer - Part 3 - CodeProject.pdf = Docs\en\WPF Diagram Designer - Part 3 - CodeProject.pdf
+		Docs\en\WPF Diagram Designer - Part 4 - CodeProject.pdf = Docs\en\WPF Diagram Designer - Part 4 - CodeProject.pdf
+		Docs\en\WPF Diagram Designer_ Part 1 - CodeProject.pdf = Docs\en\WPF Diagram Designer_ Part 1 - CodeProject.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DiagramDesignerPart2", "DiagramDesignerPart2", "{25C70968-52E7-4FC1-A6D0-B27A7EFE1DF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DiagramDesignerPart3", "DiagramDesignerPart3", "{73775C20-3450-44FC-9529-19D2427111B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DiagramDesignerPart4", "DiagramDesignerPart4", "{159B204B-D409-4C32-AF3C-AB0DB88FDD74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagramDesigner", "DiagramDesignerPart2\DiagramDesigner\DiagramDesigner.csproj", "{4946722F-CFFF-4FC6-B1C1-A6107316A58C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagramDesigner", "DiagramDesignerPart3\DiagramDesigner\DiagramDesigner.csproj", "{74872A86-6809-476B-95AB-6F3512317059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagramDesigner", "DiagramDesignerPart4\DiagramDesigner\DiagramDesigner.csproj", "{B437DF5F-20E0-4082-A92E-5C1D9C31A8E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ch", "ch", "{EBE06262-F7AA-44F7-B68E-9DDA378C12FF}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\ch\WPF Diagram Designer.docx = Docs\ch\WPF Diagram Designer.docx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SLDiagramDesignerPart1", "SLDiagramDesignerPart1", "{39EFA759-F321-4BFB-933B-6F8ABE2A3A61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveResize", "SLDiagramDesignerPart1\MoveResize\MoveResize.csproj", "{68F354D8-F44E-4F1C-8EC9-8F1BC796AEB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveResizeRotate", "SLDiagramDesignerPart1\MoveResizeRotate\MoveResizeRotate.csproj", "{8A5A4BD7-B801-4682-AC7C-ABBA3222ED8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveResizeRotateWithAdorners", "SLDiagramDesignerPart1\MoveResizeRotateWithAdorners\MoveResizeRotateWithAdorners.csproj", "{80789F85-5047-47A3-8A51-89918CA964ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{883B0892-DEAC-4E39-A5FA-C41451DEA91C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL.Sample1", "SL.Sample1\SL.Sample1.csproj", "{B46A75B3-BAD2-4F43-A49B-51FD68152588}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL.Samples.Web", "SL.Samples.Web\SL.Samples.Web.csproj", "{A8713A01-1F68-4185-A105-A0C6D5D50579}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Samples1", "WPF.Samples1\WPF.Samples1.csproj", "{065A6EC9-4880-4CDC-A214-23BEEEC8F4F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66B04124-3014-4E13-A3DC-0316C13A4F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66B04124-3014-4E13-A3DC-0316C13A4F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66B04124-3014-4E13-A3DC-0316C13A4F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66B04124-3014-4E13-A3DC-0316C13A4F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95CDC6DB-FF23-4262-8447-3CFE6B4C7188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95CDC6DB-FF23-4262-8447-3CFE6B4C7188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95CDC6DB-FF23-4262-8447-3CFE6B4C7188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95CDC6DB-FF23-4262-8447-3CFE6B4C7188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF0B4258-89E8-423F-A38D-C1E8AF9FD5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF0B4258-89E8-423F-A38D-C1E8AF9FD5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF0B4258-89E8-423F-A38D-C1E8AF9FD5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF0B4258-89E8-423F-A38D-C1E8AF9FD5C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1D1E85-7F7B-47A8-8D5D-47BA75B29A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1D1E85-7F7B-47A8-8D5D-47BA75B29A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1D1E85-7F7B-47A8-8D5D-47BA75B29A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1D1E85-7F7B-47A8-8D5D-47BA75B29A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4946722F-CFFF-4FC6-B1C1-A6107316A58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4946722F-CFFF-4FC6-B1C1-A6107316A58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4946722F-CFFF-4FC6-B1C1-A6107316A58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4946722F-CFFF-4FC6-B1C1-A6107316A58C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74872A86-6809-476B-95AB-6F3512317059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74872A86-6809-476B-95AB-6F3512317059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74872A86-6809-476B-95AB-6F3512317059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74872A86-6809-476B-95AB-6F3512317059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B437DF5F-20E0-4082-A92E-5C1D9C31A8E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B437DF5F-20E0-4082-A92E-5C1D9C31A8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B437DF5F-20E0-4082-A92E-5C1D9C31A8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B437DF5F-20E0-4082-A92E-5C1D9C31A8E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F354D8-F44E-4F1C-8EC9-8F1BC796AEB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F354D8-F44E-4F1C-8EC9-8F1BC796AEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F354D8-F44E-4F1C-8EC9-8F1BC796AEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F354D8-F44E-4F1C-8EC9-8F1BC796AEB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A5A4BD7-B801-4682-AC7C-ABBA3222ED8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A5A4BD7-B801-4682-AC7C-ABBA3222ED8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A5A4BD7-B801-4682-AC7C-ABBA3222ED8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A5A4BD7-B801-4682-AC7C-ABBA3222ED8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80789F85-5047-47A3-8A51-89918CA964ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80789F85-5047-47A3-8A51-89918CA964ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80789F85-5047-47A3-8A51-89918CA964ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80789F85-5047-47A3-8A51-89918CA964ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46A75B3-BAD2-4F43-A49B-51FD68152588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46A75B3-BAD2-4F43-A49B-51FD68152588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46A75B3-BAD2-4F43-A49B-51FD68152588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46A75B3-BAD2-4F43-A49B-51FD68152588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8713A01-1F68-4185-A105-A0C6D5D50579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8713A01-1F68-4185-A105-A0C6D5D50579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8713A01-1F68-4185-A105-A0C6D5D50579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8713A01-1F68-4185-A105-A0C6D5D50579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{065A6EC9-4880-4CDC-A214-23BEEEC8F4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{065A6EC9-4880-4CDC-A214-23BEEEC8F4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{065A6EC9-4880-4CDC-A214-23BEEEC8F4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{065A6EC9-4880-4CDC-A214-23BEEEC8F4F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95CDC6DB-FF23-4262-8447-3CFE6B4C7188} = {14368E83-2EAC-475F-9103-72E9CB896BAA}
+		{EF0B4258-89E8-423F-A38D-C1E8AF9FD5C3} = {14368E83-2EAC-475F-9103-72E9CB896BAA}
+		{7B1D1E85-7F7B-47A8-8D5D-47BA75B29A97} = {14368E83-2EAC-475F-9103-72E9CB896BAA}
+		{682F0FB2-38D5-4629-8881-3E2A4DAEBB62} = {358FD706-9B36-43E8-B8E5-7AD2DB74D0E0}
+		{EBE06262-F7AA-44F7-B68E-9DDA378C12FF} = {358FD706-9B36-43E8-B8E5-7AD2DB74D0E0}
+		{4946722F-CFFF-4FC6-B1C1-A6107316A58C} = {25C70968-52E7-4FC1-A6D0-B27A7EFE1DF7}
+		{74872A86-6809-476B-95AB-6F3512317059} = {73775C20-3450-44FC-9529-19D2427111B6}
+		{B437DF5F-20E0-4082-A92E-5C1D9C31A8E9} = {159B204B-D409-4C32-AF3C-AB0DB88FDD74}
+		{68F354D8-F44E-4F1C-8EC9-8F1BC796AEB7} = {39EFA759-F321-4BFB-933B-6F8ABE2A3A61}
+		{8A5A4BD7-B801-4682-AC7C-ABBA3222ED8E} = {39EFA759-F321-4BFB-933B-6F8ABE2A3A61}
+		{80789F85-5047-47A3-8A51-89918CA964ED} = {39EFA759-F321-4BFB-933B-6F8ABE2A3A61}
+		{B46A75B3-BAD2-4F43-A49B-51FD68152588} = {883B0892-DEAC-4E39-A5FA-C41451DEA91C}
+		{A8713A01-1F68-4185-A105-A0C6D5D50579} = {883B0892-DEAC-4E39-A5FA-C41451DEA91C}
+		{065A6EC9-4880-4CDC-A214-23BEEEC8F4F7} = {883B0892-DEAC-4E39-A5FA-C41451DEA91C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal
