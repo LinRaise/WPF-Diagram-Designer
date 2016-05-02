@@ -41,7 +41,7 @@ namespace DiagramDesigner
                 if (adornerLayer != null)
                 {
                     ContentControl designerItem = this.DataContext as ContentControl;
-                    Canvas canvas = VisualTreeHelper.GetParent(designerItem) as Canvas;
+                    //Canvas canvas = VisualTreeHelper.GetParent(designerItem) as Canvas;
                     this.adorner = new ResizeAdorner(designerItem);
                     adornerLayer.Add(this.adorner);
 

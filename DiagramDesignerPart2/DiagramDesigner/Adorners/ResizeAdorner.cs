@@ -21,7 +21,8 @@ namespace DiagramDesigner
         public ResizeAdorner(ContentControl designerItem)
             : base(designerItem)
         {
-            this.chrome = new ResizeChrome();            
+            this.chrome = new ResizeChrome();
+            this.chrome.Style = this.TryFindResource("ResizeChromeStyle") as Style;
             this.visuals = new VisualCollection(this);
             this.visuals.Add(this.chrome);
             this.chrome.DataContext = designerItem;

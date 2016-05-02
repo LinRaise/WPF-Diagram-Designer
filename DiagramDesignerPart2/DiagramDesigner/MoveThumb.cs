@@ -44,11 +44,15 @@ namespace DiagramDesigner
 
                 foreach (DesignerItem item in this.designerCanvas.SelectedItems)
                 {
-                    Canvas.SetLeft(item, Canvas.GetLeft(item) + deltaHorizontal);
-                    Canvas.SetTop(item, Canvas.GetTop(item) + deltaVertical);
+                    double left = Canvas.GetLeft(item) + deltaHorizontal;
+                    double top = Canvas.GetTop(item) + deltaVertical;
+                    if (left + item.ActualWidth < this.designerCanvas.ActualWidth)
+                        Canvas.SetLeft(item, left);
+                    if (top + item.ActualHeight < this.designerCanvas.ActualHeight)
+                        Canvas.SetTop(item, top);
                 }
 
-                this.designerCanvas.InvalidateMeasure();
+                //this.designerCanvas.InvalidateMeasure();
                 e.Handled = true;
             }
         }

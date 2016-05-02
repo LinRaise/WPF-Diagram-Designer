@@ -34,8 +34,16 @@
                            Source="Images/rotateLeft.png" />
                 </Button.Content>
             </Button>
+            <Button ToolTip="Save"
+                    Margin="8,0,3,0"
+                    Click="OnClickSave">
+                <Button.Content>
+                    <Image Stretch="Uniform"
+                           Source="Images/Save.png"/>
+                </Button.Content>
+            </Button>
         </ToolBar>
-        
+
         <Grid Margin="0,5,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="230" />
@@ -50,18 +58,30 @@
                                   Background="Transparent"
                                   HorizontalScrollBarVisibility="Auto"
                                   VerticalScrollBarVisibility="Auto">
-                        <s:DesignerCanvas x:Name="MyDesignerCanvas"
-                                          MinHeight="800"
-                                          MinWidth="1000"
+                        <TabControl>
+                            <TabItem Header="Tabitem1">
+                                <s:DesignerCanvas x:Name="MyDesignerCanvas"
                                           AllowDrop="True"
-                                          Background="White">
-                        </s:DesignerCanvas>
+                                          Background="White"
+                                          MyRows="4"
+                                          MyCols="5">
+                                </s:DesignerCanvas>
+                            </TabItem>
+                            <TabItem Header="Tabitem2">
+                                <s:DesignerCanvas x:Name="MyDesignerCanvas2"
+                                          AllowDrop="True"
+                                          Background="White"
+                                          MyRows="4"
+                                          MyCols="3">
+                                </s:DesignerCanvas>
+                            </TabItem>
+                        </TabControl>
                     </ScrollViewer>
-                    <s:ZoomBox Width="180"
+                    <!--<s:ZoomBox Width="180"
                                HorizontalAlignment="Right"
                                VerticalAlignment="Top"
                                ScrollViewer="{Binding ElementName=DesignerScrollViewer}"
-                               Margin="0,5,25,0" />
+                               Margin="0,5,25,0" />-->
                 </Grid>
             </Border>
             <Border Grid.Column="0"

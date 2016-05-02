@@ -52,7 +52,9 @@ namespace DiagramDesigner
                     {
                         case VerticalAlignment.Bottom:
                             dragDeltaVertical = Math.Min(-e.VerticalChange, minDeltaVertical);
-                            item.Height = item.ActualHeight - dragDeltaVertical;
+                            double h = item.ActualHeight - dragDeltaVertical;
+                            if (DesignerCanvas.GetTop(item) + h < this.designerCanvas.ActualHeight)
+                                item.Height = h;
                             break;
                         case VerticalAlignment.Top:
                             dragDeltaVertical = Math.Min(Math.Max(-minTop, e.VerticalChange), minDeltaVertical);
@@ -70,7 +72,9 @@ namespace DiagramDesigner
                             break;
                         case HorizontalAlignment.Right:
                             dragDeltaHorizontal = Math.Min(-e.HorizontalChange, minDeltaHorizontal);
-                            item.Width = item.ActualWidth - dragDeltaHorizontal;
+                            double w = item.ActualWidth - dragDeltaHorizontal;
+                            if (DesignerCanvas.GetLeft(item) + w < this.designerCanvas.ActualWidth)
+                                item.Width = w;
                             break;
                     }
                 }

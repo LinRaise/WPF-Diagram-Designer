@@ -54,17 +54,37 @@ namespace DiagramDesigner
                 }
                 else
                 {
-                    if (!this.IsSelected)
-                    {
-                        designer.DeselectAll();
-                        this.IsSelected = true;
-                    }
+                    //if (!this.IsSelected)
+                    //{
+                    designer.DeselectAll();
+                    this.IsSelected = true;
+                    //}
                 }
             }
 
             e.Handled = false;
         }
 
+        protected override void OnMouseDoubleClick(MouseButtonEventArgs e)
+        {
+            base.OnMouseDoubleClick(e);
+            DesignerCanvas designer = VisualTreeHelper.GetParent(this) as DesignerCanvas;
+            if (designer != null)
+            {
+                double h = designer.ActualHeight / designer.MyRows;
+                double w = designer.ActualWidth / designer.MyCols;
+                double left = DesignerCanvas.GetLeft(this);
+                double top = DesignerCanvas.GetTop(this);
+                double newleft = System.Math.Floor(left / w) * w;
+                double newtop = System.Math.Floor(top / h) * h;
+                double newright = System.Math.Ceiling((left + this.ActualWidth) / w) * w;
+                double newbottom = System.Math.Ceiling((top + this.ActualHeight) / h) * h;
+                DesignerCanvas.SetLeft(this, newleft);
+                DesignerCanvas.SetTop(this, newtop);
+                this.Width = newright - newleft;
+                this.Height = newbottom - newtop;
+            }
+        }
         private void DesignerItem_Loaded(object sender, RoutedEventArgs e)
         {
             if (this.Template != null)
@@ -74,6 +94,20 @@ namespace DiagramDesigner
 
                 MoveThumb thumb =
                     this.Template.FindName("PART_MoveThumb", this) as MoveThumb;
+
+                MenuItem menu_delete = this.Template.FindName("PART_Delete", this) as MenuItem;
+                if (menu_delete != null)
+                {
+                    //delete the DesignerItem
+                    menu_delete.Click += new RoutedEventHandler((x, y) =>
+                    {
+                        DesignerCanvas designer = (DesignerCanvas)VisualTreeHelper.GetParent(this);
+                        if (designer != null)
+                        {
+                            designer.Children.Remove(this);
+                        }
+                    });
+                }
 
                 if (contentPresenter != null && thumb != null)
                 {

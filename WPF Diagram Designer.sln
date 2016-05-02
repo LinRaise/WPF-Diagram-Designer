@@ -54,6 +54,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL.Samples.Web", "SL.Sample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Samples1", "WPF.Samples1\WPF.Samples1.csproj", "{065A6EC9-4880-4CDC-A214-23BEEEC8F4F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HVIC.DiagramDesigner", "HVIC.DiagramDesigner\HVIC.DiagramDesigner.csproj", "{9477620C-FEB2-4B7D-B323-43921D0606A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonStyle", "ButtonStyle\ButtonStyle.csproj", "{D871ED2B-DA5D-4B38-865D-ED9092CB4A2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -112,6 +116,14 @@ Global
 		{065A6EC9-4880-4CDC-A214-23BEEEC8F4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{065A6EC9-4880-4CDC-A214-23BEEEC8F4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{065A6EC9-4880-4CDC-A214-23BEEEC8F4F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9477620C-FEB2-4B7D-B323-43921D0606A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9477620C-FEB2-4B7D-B323-43921D0606A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9477620C-FEB2-4B7D-B323-43921D0606A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9477620C-FEB2-4B7D-B323-43921D0606A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D871ED2B-DA5D-4B38-865D-ED9092CB4A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D871ED2B-DA5D-4B38-865D-ED9092CB4A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D871ED2B-DA5D-4B38-865D-ED9092CB4A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D871ED2B-DA5D-4B38-865D-ED9092CB4A2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -31,7 +31,7 @@
         </Setter>
     </Style>
 
-    <Style TargetType="{x:Type s:ResizeChrome}">
+    <Style TargetType="{x:Type s:ResizeChrome}" x:Key="ResizeChromeStyle">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type s:ResizeChrome}">

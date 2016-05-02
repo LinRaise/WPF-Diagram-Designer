@@ -19,7 +19,9 @@ namespace DiagramDesigner
 
         private void OnClickNew(object sender, RoutedEventArgs args)
         {
-            MyDesignerCanvas.Children.Clear();
+            MyDesignerCanvas.MyCols = 2;
+            MyDesignerCanvas.MyRows = 2;
+            //MyDesignerCanvas.Children.Clear();
         }
 
         private void OnClickRotateLeft(object sender, RoutedEventArgs args)
@@ -30,6 +32,17 @@ namespace DiagramDesigner
         private void OnClickRotateRight(object sender, RoutedEventArgs args)
         {
             Rotate(90);
+        }
+        private void OnClickSave(object sender, RoutedEventArgs e)
+        {
+            DesignerItem item = new DesignerItem();
+            item.Style = this.TryFindResource("DesignerItemStyle") as Style;
+            item.Content = new Button() { IsHitTestVisible = false, Content = "China", Background = Brushes.Gray };
+            item.Width = 100;
+            item.Height = 100;
+            item.SetValue(Canvas.LeftProperty, 10.0);
+            item.SetValue(Canvas.TopProperty, 10.0);
+            this.MyDesignerCanvas.Children.Add(item);
         }
 
         // sort of a hack, only values of 90 (right) or -90 (left) make sense
