@@ -7,6 +7,13 @@
         FontFamily="SegoeUI"
         Height="850"
         Width="1100">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/RadioButton.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
     <DockPanel Margin="0">
         <ToolBar Height="35"
                  DockPanel.Dock="Top">
@@ -103,7 +110,22 @@
                     <!--<Expander Header="Basic Shapes"
                               Margin="0,1,0,0"
                               Content="{StaticResource BasicShapesStencils}" />-->
-
+                    <Grid Width="100" Height="100">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Margin="0,0,0,5"  Grid.Row="0" Grid.ColumnSpan="2"  Style="{StaticResource ResourceKey=RadioButtonUp}"/>
+                        <Button Margin="0,5,0,0" Grid.Row="1" Grid.ColumnSpan="2"  Style="{StaticResource ResourceKey=RadioButtonDown}"/>
+                        <Button Margin="0,0,5,0" Grid.Column="0" Grid.RowSpan="2"  Style="{StaticResource ResourceKey=RadioButtonLeft}"/>
+                        <Button Margin="5,0,0,0" Grid.Column="1" Grid.RowSpan="2"  Style="{StaticResource ResourceKey=RadioButtonRight}"/>
+                    </Grid>
+                    <Button Background="Gray" Style="{StaticResource ResourceKey=RadioButtonAdd}" Height="65.146" Margin="169,0,0,0"/>
+                    <Button Background="Gray" Style="{StaticResource ResourceKey=RadioButtonSub}" Height="65.146" Margin="169,0,0,0"/>
                 </StackPanel>
             </Border>
 
