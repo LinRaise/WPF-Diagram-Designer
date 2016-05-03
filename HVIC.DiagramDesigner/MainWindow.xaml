@@ -1,0 +1,29 @@
+﻿<Window x:Class="HVIC.DiagramDesigner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:s="clr-namespace:HVIC.DiagramDesigner"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <ListView Grid.Column="0" PreviewMouseMove="OnClickPreviewMouseMove">
+            <ListViewItem>
+                <TextBlock Text="China"/>
+            </ListViewItem>
+                <ListViewItem>
+            <TextBlock Text="China"/>
+            </ListViewItem>
+            <ListViewItem>
+                <TextBlock Text="China"/>
+            </ListViewItem>
+        </ListView>
+        <s:DesignerCanvas Grid.Column="1"  x:Name="MyDesignerCanvas"
+                                          AllowDrop="True"
+                                          Background="White"
+                                          MyRows="4"
+                                          MyCols="5">
+        </s:DesignerCanvas>
+    </Grid>
+</Window>
