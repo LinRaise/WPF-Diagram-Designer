@@ -126,6 +126,8 @@
                     </Grid>
                     <Button Background="Gray" Style="{StaticResource ResourceKey=RadioButtonAdd}" Height="65.146" Margin="169,0,0,0"/>
                     <Button Background="Gray" Style="{StaticResource ResourceKey=RadioButtonSub}" Height="65.146" Margin="169,0,0,0"/>
+                    <Button Margin="5" Content="MyNew" Width="75" Click="onClickMyNew"/>
+                    <Button Margin="5" Content="Modify" Width="75" Click="onClickModify"/>
                 </StackPanel>
             </Border>
 

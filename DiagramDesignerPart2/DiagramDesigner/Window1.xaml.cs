@@ -71,5 +71,16 @@ namespace DiagramDesigner
             }
         }
 
+        private void onClickModify(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void onClickMyNew(object sender, RoutedEventArgs e)
+        {
+            NewLayout layout = new NewLayout();
+            layout.Show();
+        }
+
     }
 }

@@ -97,6 +97,9 @@
     <Compile Include="DesignerCanvas.cs" />
     <Compile Include="DesignerItem.cs" />
     <Compile Include="MoveThumb.cs" />
+    <Compile Include="NewLayout.xaml.cs">
+      <DependentUpon>NewLayout.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -129,6 +132,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="NewLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\Brushes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
